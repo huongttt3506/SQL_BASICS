@@ -11,8 +11,8 @@ CREATE TABLE employee(
 CREATE TABLE goods(
     id INtEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100) NOT NULL, 
-    price INTEGER NOT NULL,
-    stock INTEGER
+    price INTEGER NOT NULL, --REAL 
+    stock INTEGER --DEFAULT 0
 );
 -- p3
 CREATE TABLE restaurantMenu(
@@ -21,7 +21,7 @@ CREATE TABLE restaurantMenu(
     category VARCHAR(32) NOT NULL,
     description TEXT,
     price INTEGER NOT NULL,
-    vegetarian BOOLEAN NOT NULL
+    vegetarian BOOLEAN NOT NULL -- INTEGER (O - FALSE, 1 - TRUE)
 );
 --P4
 CREATE TABLE music(
@@ -31,7 +31,11 @@ CREATE TABLE music(
     writer VARCHAR(100),
     lyrics TEXT,
     album_name VARCHAR(255),
-    year INTEGER,
+    year INTEGER, 
+    --year integer
+    --month integr
+    -- day int
+    --  release_date TEXT
     dur_in_secs INTEGER
 );
 
